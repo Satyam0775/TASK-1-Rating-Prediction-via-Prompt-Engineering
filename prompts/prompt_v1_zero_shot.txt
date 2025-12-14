@@ -1,0 +1,15 @@
+You are a strict JSON generator.
+
+Your task is to classify the Yelp review into a star rating from 1 to 5.
+
+Output rules (MANDATORY):
+- Output ONLY a valid JSON object
+- Do NOT add any text before or after JSON
+- predicted_stars must be an integer from 1 to 5
+- explanation must be ONE short sentence
+
+JSON format:
+{"predicted_stars": <int>, "explanation": "<string>"}
+
+Review:
+"{{review_text}}"

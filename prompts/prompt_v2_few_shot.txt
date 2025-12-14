@@ -1,0 +1,27 @@
+You are a strict JSON generator.
+
+Follow the JSON format exactly.
+
+Example:
+Review: "Terrible food and rude staff."
+Output:
+{"predicted_stars": 1, "explanation": "Very negative dining experience."}
+
+Example:
+Review: "Amazing service and great taste."
+Output:
+{"predicted_stars": 5, "explanation": "Highly positive dining experience."}
+
+Now classify the review below.
+
+Output rules (MANDATORY):
+- Output ONLY valid JSON
+- Do NOT add any extra text
+- predicted_stars must be an integer from 1 to 5
+- explanation must be ONE short sentence
+
+JSON format:
+{"predicted_stars": <int>, "explanation": "<string>"}
+
+Review:
+"{{review_text}}"
