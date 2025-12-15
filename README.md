@@ -17,6 +17,63 @@ This task focuses on using **prompt engineering techniques** to classify Yelp re
 - **Provider:** OpenRouter  
 - **Model:** `mistralai/mistral-7b-instruct`
 
+---
+
+## 🔹 Task 2: Two-Dashboard AI Feedback System (Web-Based)
+
+### Overview
+Task 2 involves building and deploying a **web-based AI feedback system** with two dashboards:
+- A **User Dashboard (public-facing)**
+- An **Admin Dashboard (internal-facing)**
+
+Both dashboards read from and write to a **shared data source** and use a **Large Language Model (LLM)** to generate responses, summaries, and recommended actions.
+
+---
+
+### 🧑‍💻 User Dashboard (Public-Facing)
+
+Users can:
+- Select a star rating (1–5)
+- Write a short review
+- Submit feedback
+
+On submission:
+- An AI-generated response is displayed to the user
+- Feedback is stored in a shared JSON-based data store
+
+---
+
+### 🧑‍💼 Admin Dashboard (Internal-Facing)
+
+Admins can view a live-updating list of all submissions, including:
+- User rating
+- User review
+- AI-generated summary
+- AI-suggested recommended actions
+
+Additional analytics include:
+- Total number of reviews
+- Average rating
+
+---
+
+### 🤖 LLM Usage
+
+LLMs are used for:
+- User-facing response generation
+- Review summarisation
+- Recommended next actions for admins
+
+---
+
+### 🌐 Deployment
+
+The application is deployed using **Hugging Face Spaces** with **Streamlit**.
+
+**Live Application (User & Admin Dashboards):**
+
+
+
 ### Output Format
 ```json
 {
@@ -44,18 +101,6 @@ outputs/
 Conclusion
 Structured prompting produced the most reliable and consistent results.
 
-🔹 Task 2: Two-Dashboard AI Feedback System (Web-Based)
-Overview
-Task 2 involves building and deploying a web-based AI feedback system with two dashboards:
-
-A User Dashboard (public-facing)
-
-An Admin Dashboard (internal-facing)
-
-Both dashboards read and write from a shared data source and use an LLM for generating responses, summaries, and recommended actions.
-
-🧑‍💻 User Dashboard (Public-Facing)
-Users can:
 
 Select a star rating (1–5)
 Write a short review
